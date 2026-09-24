@@ -1,0 +1,51 @@
+
+{% extends "base.html" %}
+{% block title %}Recommendation · PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head compact">
+  <span class="eyebrow">{{ item.planner_type|upper }}</span>
+  <h1>Your personalized budget plan</h1>
+  <p>Created {{ item.created_at.strftime('%d %b %Y, %I:%M %p') }}</p>
+</section>
+<div class="summary">
+  <div><span>Total budget</span><strong>₹{{ "%.2f"|format(result.total_budget) }}</strong></div>
+  <div><span>Estimated total</span><strong>₹{{ "%.2f"|format(result.estimated_total) }}</strong></div>
+  <div><span>Remaining</span><strong>₹{{ "%.2f"|format(result.remaining_budget) }}</strong></div>
+</div>
+
+{% if result.budget_breakdown %}
+<section class="section"><h2>Budget breakdown</h2><div class="grid four">
+{% for x in result.budget_breakdown %}
+<div class="mini-card"><strong>{{ x.category }}</strong><span>₹{{ "%.2f"|format(x.allocation) }}</span><small>{{ x.reason }}</small></div>
+{% endfor %}
+</div></section>
+{% endif %}
+
+{% if result.outfit_analysis %}
+<section class="section"><h2>Outfit analysis</h2><div class="card"><p><strong>Colors:</strong> {{ result.outfit_analysis.dominant_colors|join(', ') }}</p><p><strong>Style:</strong> {{ result.outfit_analysis.style }}</p><p>{{ result.outfit_analysis.matching_notes }}</p></div></section>
+{% endif %}
+
+<section class="section">
+<h2>Recommendations</h2>
+<div class="recommendations">
+{% for x in result.recommendations %}
+<article class="recommendation">
+  <div class="rec-main"><span class="badge">{{ x.category }}</span><h3>{{ x.item }}</h3><p>{{ x.description }}</p><p class="muted">{{ x.why }}</p></div>
+  <div class="rec-price"><strong>₹{{ "%.2f"|format(x.estimated_price) }}</strong><span>Qty {{ x.quantity }}</span><a href="{{ x.search_url }}" target="_blank" rel="noopener">Shop/search ↗</a></div>
+</article>
+{% else %}<div class="empty">No item recommendations were returned.</div>{% endfor %}
+</div>
+</section>
+
+{% if result.venue_suggestions %}
+<section class="section"><h2>Venue suggestions</h2>{% for v in result.venue_suggestions %}<div class="card row"><div><strong>{{ v.name }}</strong><p>{{ v.type }}</p></div><div><strong>₹{{ "%.2f"|format(v.estimated_cost) }}</strong> · <a href="{{ v.search_url }}" target="_blank" rel="noopener">Search ↗</a></div></div>{% endfor %}</section>
+{% endif %}
+
+{% if result.styling_tips %}
+<section class="section"><h2>Styling tips</h2><ul>{% for tip in result.styling_tips %}<li>{{ tip }}</li>{% endfor %}</ul></section>
+{% endif %}
+{% if result.additional_suggestions %}
+<section class="section"><h2>Additional suggestions</h2><ul>{% for tip in result.additional_suggestions %}<li>{{ tip }}</li>{% endfor %}</ul></section>
+{% endif %}
+<a class="btn secondary" href="/history">← Back to history</a>
+{% endblock %}

@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+{% block title %}Jewelry Planner · PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head compact"><span class="eyebrow">JEWELRY PLANNER</span><h1>Jewelry Budget Planner</h1><p>Use an optional outfit image for visual matching when Gemini is configured.</p></section>
+<form id="jewelry-form" class="planner-form" enctype="multipart/form-data">
+  <div class="form-grid">
+    <label>Total budget (₹)<input name="total_budget" type="number" min="1" required placeholder="5000"></label>
+    <label>Occasion<input name="occasion" required placeholder="Birthday / Wedding"></label>
+    <label>Style<select name="style"><option>classic</option><option>minimal</option><option>traditional</option><option>modern</option><option>statement</option></select></label>
+  </div>
+  <label>Style preferences<textarea name="preferences" placeholder="Example: gold tone, lightweight, avoid large earrings"></textarea></label>
+  <label>Outfit image (optional)<input name="outfit_image" type="file" accept="image/jpeg,image/png,image/webp"></label>
+  <button class="btn" type="submit">Generate jewelry recommendations</button>
+</form>
+<div id="result" class="result"></div>
+{% endblock %}

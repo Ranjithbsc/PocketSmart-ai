@@ -1,0 +1,182 @@
+[
+  {
+    "domain": "home",
+    "category": "lights",
+    "name": "Warm White LED Bulb 9W",
+    "description": "Energy-efficient warm white LED bulb.",
+    "price": 120,
+    "platform": "Amazon",
+    "search_term": "warm white LED bulb 9W"
+  },
+  {
+    "domain": "home",
+    "category": "lights",
+    "name": "Minimal Pendant Light",
+    "description": "Simple pendant light for dining or living areas.",
+    "price": 1499,
+    "platform": "IKEA",
+    "search_term": "minimal pendant light"
+  },
+  {
+    "domain": "home",
+    "category": "fans",
+    "name": "Havells Ceiling Fan 1200mm",
+    "description": "Basic energy-efficient ceiling fan.",
+    "price": 2499,
+    "platform": "Amazon",
+    "search_term": "Havells ceiling fan 1200mm"
+  },
+  {
+    "domain": "home",
+    "category": "fans",
+    "name": "IKEA Decorative Ceiling Fan",
+    "description": "Decor-focused ceiling fan search option.",
+    "price": 3999,
+    "platform": "IKEA",
+    "search_term": "decorative ceiling fan"
+  },
+  {
+    "domain": "home",
+    "category": "furniture",
+    "name": "Plastic Accent Chair",
+    "description": "Simple accent chair suitable for a living room.",
+    "price": 2499,
+    "platform": "Flipkart",
+    "search_term": "plastic accent chair"
+  },
+  {
+    "domain": "home",
+    "category": "furniture",
+    "name": "Small Wooden Side Table",
+    "description": "Compact side table for a living room or bedroom.",
+    "price": 2299,
+    "platform": "Amazon",
+    "search_term": "small wooden side table"
+  },
+  {
+    "domain": "home",
+    "category": "furniture",
+    "name": "IKEA Storage Cabinet",
+    "description": "Compact storage solution for organized rooms.",
+    "price": 6999,
+    "platform": "IKEA",
+    "search_term": "IKEA storage cabinet"
+  },
+  {
+    "domain": "home",
+    "category": "dining",
+    "name": "4-Seater Dining Table",
+    "description": "Compact dining table for four people.",
+    "price": 8999,
+    "platform": "IKEA",
+    "search_term": "4 seater dining table"
+  },
+  {
+    "domain": "party",
+    "category": "venue",
+    "name": "Community Hall Search",
+    "description": "Search for a community hall suitable for small events.",
+    "price": 8000,
+    "platform": "Google",
+    "search_term": "community hall rental"
+  },
+  {
+    "domain": "party",
+    "category": "catering",
+    "name": "Vegetarian Buffet Package",
+    "description": "Illustrative per-person vegetarian buffet option.",
+    "price": 450,
+    "platform": "Swiggy",
+    "search_term": "vegetarian buffet catering"
+  },
+  {
+    "domain": "party",
+    "category": "catering",
+    "name": "Mixed Buffet Package",
+    "description": "Illustrative per-person mixed menu option.",
+    "price": 650,
+    "platform": "Zomato",
+    "search_term": "party catering buffet"
+  },
+  {
+    "domain": "party",
+    "category": "decoration",
+    "name": "Birthday Balloon Decor",
+    "description": "Basic balloon decoration package.",
+    "price": 2500,
+    "platform": "Amazon",
+    "search_term": "birthday balloon decoration"
+  },
+  {
+    "domain": "party",
+    "category": "decoration",
+    "name": "Elegant Event Backdrop",
+    "description": "Reusable decorative backdrop option.",
+    "price": 3999,
+    "platform": "Flipkart",
+    "search_term": "event backdrop decoration"
+  },
+  {
+    "domain": "party",
+    "category": "entertainment",
+    "name": "Bluetooth Speaker Setup",
+    "description": "Basic speaker setup for small events.",
+    "price": 1800,
+    "platform": "Amazon",
+    "search_term": "Bluetooth speaker party"
+  },
+  {
+    "domain": "party",
+    "category": "entertainment",
+    "name": "DJ Service Search",
+    "description": "Search for local DJ/event entertainment services.",
+    "price": 6000,
+    "platform": "Google",
+    "search_term": "DJ service event"
+  },
+  {
+    "domain": "jewelry",
+    "category": "earrings",
+    "name": "Minimal Gold-Tone Studs",
+    "description": "Simple studs for everyday or formal wear.",
+    "price": 799,
+    "platform": "Amazon",
+    "search_term": "gold tone stud earrings"
+  },
+  {
+    "domain": "jewelry",
+    "category": "necklace",
+    "name": "Pearl Pendant Necklace",
+    "description": "Classic pearl-inspired pendant style.",
+    "price": 1499,
+    "platform": "Flipkart",
+    "search_term": "pearl pendant necklace"
+  },
+  {
+    "domain": "jewelry",
+    "category": "bangles",
+    "name": "Classic Metal Bangle Set",
+    "description": "Simple bangle set for festive outfits.",
+    "price": 999,
+    "platform": "Amazon",
+    "search_term": "classic metal bangle set"
+  },
+  {
+    "domain": "jewelry",
+    "category": "ring",
+    "name": "Minimal Statement Ring",
+    "description": "Minimal ring suitable for party or occasion wear.",
+    "price": 699,
+    "platform": "Flipkart",
+    "search_term": "minimal statement ring"
+  },
+  {
+    "domain": "jewelry",
+    "category": "set",
+    "name": "Traditional Necklace Set",
+    "description": "Traditional-style necklace and earring combination.",
+    "price": 2999,
+    "platform": "Amazon",
+    "search_term": "traditional necklace set"
+  }
+]

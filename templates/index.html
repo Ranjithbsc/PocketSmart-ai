@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+{% block title %}PocketSmart AI · Smart Budget Planner{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <span class="eyebrow">GENAI BUDGET ASSISTANT</span>
+    <h1>Plan smarter. Spend with a plan.</h1>
+    <p>PocketSmart AI turns your budget, preferences, and optional outfit image into structured plans for home interiors, parties, and jewelry.</p>
+    <div class="actions">
+      <a class="btn" href="{{ '/dashboard' if user else '/register' }}">Start planning</a>
+      <a class="btn secondary" href="#planners">Explore planners</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="metric">3</div><span>specialized planners</span>
+    <hr>
+    <div class="metric">₹</div><span>budget-first recommendations</span>
+    <hr>
+    <div class="metric">AI</div><span>optional Gemini integration</span>
+  </div>
+</section>
+
+<section id="planners">
+  <h2>Smart budget planners</h2>
+  <div class="grid three">
+    <article class="card"><div class="icon">🏠</div><h3>Home Interior</h3><p>Allocate your budget across lighting, fans, furniture and dining.</p><a href="{{ '/planner/home' if user else '/login' }}">Open planner →</a></article>
+    <article class="card"><div class="icon">🎉</div><h3>Party</h3><p>Plan venue, catering, decoration and entertainment around guest count.</p><a href="{{ '/planner/party' if user else '/login' }}">Open planner →</a></article>
+    <article class="card"><div class="icon">💎</div><h3>Jewelry</h3><p>Match jewelry to an occasion, style and optional outfit image.</p><a href="{{ '/planner/jewelry' if user else '/login' }}">Open planner →</a></article>
+  </div>
+</section>
+{% endblock %}

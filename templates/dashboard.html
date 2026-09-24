@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard · PocketSmart AI{% endblock %}
+
+{% block content %}
+
+<section class="dashboard-hero">
+  <div>
+    <span class="eyebrow">POCKETSMART AI</span>
+    <h1>Welcome back,<br><span>{{ user.username }}</span> 👋</h1>
+    <p>
+      Plan smarter. Spend better. Get recommendations
+      that fit your budget.
+    </p>
+  </div>
+
+  <div class="dashboard-hero-badge">
+    <div class="dashboard-spark">✦</div>
+    <strong>Smart Planning</strong>
+    <small>AI-powered recommendations</small>
+  </div>
+</section>
+
+
+<section class="planner-section">
+
+  <div class="section-title">
+    <div>
+      <span class="eyebrow">PLANNERS</span>
+      <h2>What are you planning?</h2>
+    </div>
+  </div>
+
+  <div class="planner-grid">
+
+    <article class="planner-card home-card">
+      <div class="planner-icon">🏠</div>
+
+      <div class="planner-number">01</div>
+
+      <h3>Home Interior</h3>
+
+      <p>
+        Plan furniture, lighting, fans, dining
+        and other home essentials within your budget.
+      </p>
+
+      <a class="planner-action" href="/planner/home">
+        Start planning <span>→</span>
+      </a>
+    </article>
+
+
+    <article class="planner-card party-card">
+      <div class="planner-icon">🎉</div>
+
+      <div class="planner-number">02</div>
+
+      <h3>Party Planner</h3>
+
+      <p>
+        Organize venue, food, decoration and
+        entertainment without overspending.
+      </p>
+
+      <a class="planner-action" href="/planner/party">
+        Start planning <span>→</span>
+      </a>
+    </article>
+
+
+    <article class="planner-card jewelry-card">
+      <div class="planner-icon">💎</div>
+
+      <div class="planner-number">03</div>
+
+      <h3>Jewelry Planner</h3>
+
+      <p>
+        Discover occasion and outfit-aware
+        jewelry suggestions that match your budget.
+      </p>
+
+      <a class="planner-action" href="/planner/jewelry">
+        Start planning <span>→</span>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+
+<section class="activity-section">
+
+  <div class="section-title">
+    <div>
+      <span class="eyebrow">YOUR PLANS</span>
+      <h2>Recent activity</h2>
+    </div>
+
+    <a class="activity-link" href="/history">
+      View all →
+    </a>
+  </div>
+
+
+  {% if recent %}
+
+  <div class="activity-list">
+
+    {% for item in recent %}
+
+    <a class="activity-item" href="/recommendations/{{ item.id }}">
+
+      <div class="activity-icon">
+        {% if item.planner_type == "home" %}
+        🏠
+        {% elif item.planner_type == "party" %}
+        🎉
+        {% else %}
+        💎
+        {% endif %}
+      </div>
+
+      <div class="activity-info">
+        <strong>{{ item.planner_type|title }} Planner</strong>
+        <span>
+          {{ item.created_at.strftime('%d %b %Y, %I:%M %p') }}
+        </span>
+      </div>
+
+      <div class="activity-arrow">
+        →
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+  {% else %}
+
+  <div class="empty activity-empty">
+    <div class="empty-icon">✨</div>
+    <h3>No plans yet</h3>
+    <p>Create your first smart recommendation plan.</p>
+  </div>
+
+  {% endif %}
+
+</section>
+
+{% endblock %}

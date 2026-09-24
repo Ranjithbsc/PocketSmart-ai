@@ -1,0 +1,37 @@
+POCKETSMART AI - START HERE (WINDOWS)
+=====================================
+
+1) Install Python 3.11+ and VS Code.
+2) Extract this ZIP.
+3) Open the extracted 'pocketsmart-ai' folder in VS Code.
+4) Open Terminal -> PowerShell.
+5) Run:
+
+   py -3 -m venv .venv
+   .venv\Scripts\Activate.ps1
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+   Copy-Item .env.example .env
+
+6) Open .env.
+   - Keep GEMINI_MODEL=gemini-3.8-flash
+   - Paste your NEW Gemini API key into GEMINI_API_KEY=
+   - Never paste the key into source code or GitHub.
+
+7) Start the app:
+
+   python run.py
+
+8) Open:
+   http://127.0.0.1:8000
+
+9) Register -> Login -> Dashboard -> test Home, Party, Jewelry.
+
+10) If Gemini is temporarily unavailable, the app automatically retries and then
+    uses the local fallback catalog instead of crashing.
+
+IMPORTANT:
+- Use a newly created/rotated Gemini key. A key exposed in screenshots or chat
+  should be treated as compromised.
+- The project uses local mock catalog data and search links; it does not pretend
+  to have live Amazon/Flipkart/IKEA/Swiggy/Zomato/OYO prices or stock.
