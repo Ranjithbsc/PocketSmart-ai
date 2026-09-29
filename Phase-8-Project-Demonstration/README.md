@@ -60,6 +60,6 @@ The demonstration will verify the complete user workflow from authentication to 
 
 ## 7. Demo Video Link
 
-The final demonstration video link will be added here after recording and uploading the video.
+The final demonstration video of PocketSmart AI is available below.
 
-**Demo Video:** To be added
+**Demo Video:** [Watch PocketSmart AI Demo Video](https://drive.google.com/file/d/1BKCmXrvjD-hHQUIMrUrjXarsn0MJT_fO/view?usp=drivesdk)
