@@ -72,7 +72,7 @@ Each project phase is maintained separately in the GitHub repository.
 
 ## 6. Project Report
 
-A complete project report will document:
+The complete project report documents:
 
 - Introduction
 - Problem Statement
@@ -90,7 +90,7 @@ A complete project report will document:
 
 ## 7. Project Presentation
 
-A presentation will be prepared to explain:
+The project presentation explains:
 
 - Project Overview
 - Problem Statement
@@ -104,11 +104,13 @@ A presentation will be prepared to explain:
 - Future Scope
 - Conclusion
 
+The presentation is available in the Phase-8 Project Demonstration section of the repository.
+
 ## 8. Demonstration
 
-A demonstration video will show the working application.
+A demonstration video shows the working application.
 
-The demo will cover:
+The demo covers:
 
 1. Opening the application
 2. User Registration
@@ -120,14 +122,21 @@ The demo will cover:
 8. Viewing Budget Breakdown
 9. Viewing Recommendation History
 
-## 9. GitHub Repository
+## 9. Team Members and Contributions
 
-The complete source code and project documentation will be maintained in a public GitHub repository.
+- **Ranjith P — Team Leader:** Remaining project development and overall integration
+- **Mohammed Reyan M:** Demo Video
+- **Shyam Sundar:** PowerPoint Presentation (PPT)
+- **Magesh L:** Project Documentation
+
+## 10. GitHub Repository
+
+The complete source code and project documentation are maintained in a public GitHub repository.
 
 The repository contains the application source code, configuration files, documentation, testing information and project phase records.
 
-## 10. Documentation Result
+## 11. Documentation Result
 
 The documentation phase organizes all project information into a structured format for easy understanding, evaluation, presentation and future maintenance.
 
-The final documentation will be supported by the project report, presentation, screenshots and demonstration video.
+The final documentation is supported by the project report, presentation, screenshots and demonstration video.
